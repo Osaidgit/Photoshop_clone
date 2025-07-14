@@ -14,7 +14,7 @@ btn5= pg.Rect(x,220, w,h)
 btn6= pg.Rect(x,270,w,h)
 btn7= pg.Rect(x,320, w,h)
 btn8 = pg.Rect(x,370,w,h)
-shape = pg.image.load("sprites/shapes.png")
+shape = pg.image.load("sprites/shapes.jpeg")
 class Menu:
 	def __init__(self):
 		self.rect0 = menu
@@ -49,7 +49,7 @@ class Page:
 		pg.draw.rect(win,grey,p_rect)
 		pg.draw.rect(win,white,p_rect1)
 #_______ FOR EXIT ________#
-exit_img = pg.image.load("sprites/exit2.png")
+exit_img = pg.image.load("sprites/exit2.jpeg")
 resize_exit = pg.transform.scale(exit_img,(40,40))
 e_rect = pg.Rect(width -70,height //50, 40,40)
 
