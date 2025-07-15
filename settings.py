@@ -4,6 +4,9 @@ pg.init()
 
 win = pg.display.set_mode((0,0),pg.RESIZABLE)
 width,height = win.get_width(),win.get_height()
+
+#to caluculate visualize scren boundary
+win_rect = pg.Rect(0,0,width,height)
 #COLORS
 red,black,h_white,white,grey,blue,green=(250, 0,0),(0,0,0),(200,200,200),(255,255,255),(100,100,100),(0,0,255),(0,200,0)
 #App colors
@@ -77,3 +80,6 @@ def Show_pos():
 	pos =pg.mouse.get_pos()
 	text1 = font.render(str(pos), True,red)
 	win.blit(text1, (160,1210)),win.blit(text, (110,1210))
+
+def show_boundary():
+	pg.draw.rect(win,red,win_rect,2)

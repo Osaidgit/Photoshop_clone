@@ -58,6 +58,7 @@ class Exit:
 		self.rect = e_rect		
 	def draw(self):
 		win.blit(resize_exit,(self.rect.center))
+		pg.draw.rect(win,red,self.rect,2)
 # _____ UTILITY ________#
 def exit(pos,run):
 	if Exit().rect.collidepoint(pos):

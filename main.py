@@ -7,6 +7,7 @@ while run:
 	app.draw()
 	app.check_events()
 	app.update()
+	print(width,height)
 	
 
 if __name__ == '__main__':

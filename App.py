@@ -20,6 +20,7 @@ class Main:
 		self.is_dragging = False	
 	#_________________________
 	def check_events(self):
+		show_boundary()
 		#__Method variables
 		self.pos = pg.mouse.get_pos()
 		for i in pg.event.get():
