@@ -1,5 +1,6 @@
 import pygame as pg
 import random as ran
+from decorators import Time
 pg.init()
 
 win = pg.display.set_mode((0,0),pg.RESIZABLE)
@@ -7,9 +8,18 @@ width,height = win.get_width(),win.get_height()
 
 #to caluculate visualize scren boundary
 win_rect = pg.Rect(0,0,width,height)
+
 #COLORS
-red,black,h_white,white,grey,blue,green=(250, 0,0),(0,0,0),(200,200,200),(255,255,255),(100,100,100),(0,0,255),(0,200,0)
-#App colors
+red = 250, 0,0
+black = 0,0,0
+h_white = 200,200,200
+white = 255,255,255
+grey = 100,100,100
+blue= 0,0,255
+green = 0,200,0
+
+
+# ___ APP CLOLOR THEME____ ##
 GREY = 168,195,242
 PURPLE = 130,87,242
 DARKBLUE = 87,193,242

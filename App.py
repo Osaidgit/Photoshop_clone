@@ -57,14 +57,10 @@ class Main:
 				if self.shape.circle.rect.collidepoint(self.pos):
 					self.is_dragging = True
 					self.move_circle = True
-			if i.type == pg.MOUSEBUTTONDOWN:
-				self.pos
-				if self.shape.box.box.collidepoint(self.pos):
+				elif self.shape.box.box.collidepoint(self.pos):
 					self.is_dragging = True
 					self.move_box = True
-			if i.type == pg.MOUSEBUTTONDOWN:
-				self.pos
-				if self.shape.tri.rect.collidepoint(self.pos):
+				elif self.shape.tri.rect.collidepoint(self.pos):
 					self.is_dragging = True
 					self.move_tri= True
 			#_______________________						

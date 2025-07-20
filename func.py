@@ -15,6 +15,8 @@ btn6= pg.Rect(x,270,w,h)
 btn7= pg.Rect(x,320, w,h)
 btn8 = pg.Rect(x,370,w,h)
 shape = pg.image.load("sprites/shapes.jpeg")
+
+@Time
 class Menu:
 	def __init__(self):
 		self.rect0 = menu
@@ -40,24 +42,28 @@ class Menu:
 		pg.draw.rect(win,black,self.btn7,1)
 		pg.draw.rect(win,black,self.btn8,1)
 #_____________________________
-p_rect = pg.Rect(width //4,100,500,1000)
-p_rect1 = pg.Rect(width //4-10,90,500,1000)
+p_rect = pg.Rect(width //4,100,500,600)
+p_rect1 = pg.Rect(width //4-10,90,500,600)
+
+@Time
 class Page:
 	def __init__(self):
 		self.rect = p_rect
 	def draw(self):
 		pg.draw.rect(win,grey,p_rect)
 		pg.draw.rect(win,white,p_rect1)
+
 #_______ FOR EXIT ________#
 exit_img = pg.image.load("sprites/exit2.jpeg")
 resize_exit = pg.transform.scale(exit_img,(40,40))
 e_rect = pg.Rect(width -70,height //50, 40,40)
 
+@Time
 class Exit:
 	def __init__(self):
 		self.rect = e_rect		
 	def draw(self):
-		win.blit(resize_exit,(self.rect.center))
+		win.blit(resize_exit,(self.rect.topleft))
 		pg.draw.rect(win,red,self.rect,2)
 # _____ UTILITY ________#
 def exit(pos,run):
@@ -67,6 +73,8 @@ def exit(pos,run):
 					quit()
 
 #____ FOR SHAPES _______#
+
+@Time
 class Shapes:
 	def __init__(self):
 		self.circle = Circle()
