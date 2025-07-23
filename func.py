@@ -56,7 +56,7 @@ class Page:
 #_______ FOR EXIT ________#
 exit_img = pg.image.load("sprites/exit2.jpeg")
 resize_exit = pg.transform.scale(exit_img,(40,40))
-e_rect = pg.Rect(width -70,height //50, 40,40)
+e_rect = pg.Rect(width-70,win_rect.top, 40,40)
 
 @Time
 class Exit:
